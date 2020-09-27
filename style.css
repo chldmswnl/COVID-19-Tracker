@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock
+{
+    background-color: #494949;
+    padding:10px;
+    width:95%;
+    text-align: center;
+}
+.at_time
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+     
+}
+
+.boxes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding:10px;
+}
+
+.down
+{
+    display: flex;
+    justify-content: center;
+
+}
+.box h4{
+    color:#59564e;
+}
+
+.box span{
+    font-weight: bold;
+}
+
+.new_cases_box h4,.new_deaths_box h4
+{
+    font-size: 20px;
+}
+.new_cases_box span,.new_deaths_box span
+{
+    font-size: 30px;
+    color:#a30318;
+}
+
+.searching
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.searchingBox
+{
+    width: 50%;
+    height: 20px;
+}
+
+.btn
+{
+    margin: 5px;
+}
+.table_title
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#57544e;
+    width: 78%;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.table_title span
+{
+    color:white;
+}
+.countries_stat
+{
+    width: 80%;
+    background-color: white;
+    margin:10px;
+    margin-bottom: 40px;
+    border-spacing: 0;
+    
+}
+.countries_stat td
+{
+    padding:10px;
+    text-align: center;
+    width: 10%;
+}
+tr:nth-child(even)
+{
+    background-color: #ded8d7;
+}
+tr:nth-child(odd)
+{
+    background-color: #aca7a6;
+}
+@media screen and (max-width: 750px)
+{
+    .boxes
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:95%;
+        
+    }
+    .new_cases_box,.new_deaths_box,.total_cases_box,.total_deaths_box
+    {
+        margin-bottom: 5px;
+    }
+}
